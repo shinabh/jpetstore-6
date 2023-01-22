@@ -8,6 +8,13 @@ pipeline {
       }
     }
 
+    stage('Unit Test2') {
+      steps {
+        sh './mvnw test'
+        junit '**/target/surefire-reports/TEST-*.xml'
+      }
+    }
+
     stage('Unit Test') {
       steps {
         sh './mvnw test'

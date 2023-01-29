@@ -231,11 +231,17 @@
               <zipUrlInstaller>
                 <url>${cargo.maven.containerUrl}</url>
               </zipUrlInstaller>              
-            </container>            
+            </container>
+             <configuration>
+                    <properties>
+                        <cargo.servlet.port>8090</cargo.servlet.port>
+                    </properties>
+              </configuration>
             <daemon>
               <properties>
                 <cargo.daemon.url>http://localhost:18000</cargo.daemon.url>
-                <cargo.daemon.handleid>${project.artifactId}</cargo.daemon.handleid>              
+                <cargo.daemon.handleid>${project.artifactId}</cargo.daemon.handleid>
+                <cargo.servlet.port>8090</cargo.servlet.port>
               </properties>
             </daemon>
           </configuration>
@@ -252,14 +258,28 @@
             <phase>pre-integration-test</phase>
             <goals>
               <goal>start</goal>
-            </goals>           
+            </goals>
+            <configuration>
+              <configuration>
+                <properties>
+                  <cargo.servlet.port>8090</cargo.servlet.port>
+                </properties>
+              </configuration>
+            </configuration>
           </execution>
           <execution>
             <id>stop-container</id>
             <phase>post-integration-test</phase>
             <goals>
               <goal>stop</goal>
-            </goals>            
+            </goals>
+             <configuration>
+              <configuration>
+                <properties>
+                  <cargo.servlet.port>8090</cargo.servlet.port>
+                </properties>
+              </configuration>
+            </configuration>
           </execution>
         </executions>
       </plugin>

@@ -342,18 +342,18 @@
   <profiles>
     <!-- Profiles for Application Server -->
     <profile>
-      <id>tomcat90</id>     
-      <properties>
-        <tomcat.major-version>9</tomcat.major-version>
-        <tomcat.version>9.0.70</tomcat.version>
-         <cargo.servlet.port>8090</cargo.servlet.port>
-      </properties>
-    </profile>
-    <profile>
-      <id>tomcat85</id>
+      <id>tomcat90</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
+      <properties>
+        <tomcat.major-version>9</tomcat.major-version>
+        <tomcat.version>9.0.70</tomcat.version>
+        <cargo.servlet.port>8091</cargo.servlet.port>
+      </properties>
+    </profile>
+    <profile>
+      <id>tomcat85</id>      
       <properties>
         <tomcat.major-version>8</tomcat.major-version>
         <tomcat.version>8.5.84</tomcat.version>

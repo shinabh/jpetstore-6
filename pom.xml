@@ -231,17 +231,11 @@
               <zipUrlInstaller>
                 <url>${cargo.maven.containerUrl}</url>
               </zipUrlInstaller>              
-            </container>
-             <configuration>
-                    <properties>
-                        <cargo.servlet.port>8090</cargo.servlet.port>
-                    </properties>
-              </configuration>
+            </container>             
             <daemon>
               <properties>
                 <cargo.daemon.url>http://localhost:18000</cargo.daemon.url>
-                <cargo.daemon.handleid>${project.artifactId}</cargo.daemon.handleid>
-                <cargo.servlet.port>8090</cargo.servlet.port>
+                <cargo.daemon.handleid>${project.artifactId}</cargo.daemon.handleid>            
               </properties>
             </daemon>
           </configuration>

@@ -253,6 +253,13 @@
             <goals>
               <goal>start</goal>
             </goals>
+            <configuration>
+              <configuration>
+                <properties>
+                  <cargo.servlet.port>8090</cargo.servlet.port>
+                </properties>
+              </configuration>
+            </configuration>
           </execution>
           <execution>
             <id>stop-container</id>
@@ -260,6 +267,13 @@
             <goals>
               <goal>stop</goal>
             </goals>
+             <configuration>
+              <configuration>
+                <properties>
+                  <cargo.servlet.port>8090</cargo.servlet.port>
+                </properties>
+              </configuration>
+            </configuration>
           </execution>
         </executions>
       </plugin>

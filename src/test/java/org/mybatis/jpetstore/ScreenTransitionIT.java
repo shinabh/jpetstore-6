@@ -54,8 +54,8 @@ class ScreenTransitionIT {
   @BeforeAll
   static void setupSelenide() {
     browser = CHROME;
-    headless = true;
-    timeout = TimeUnit.SECONDS.toMillis(10);
+    headless = false;
+    timeout = TimeUnit.SECONDS.toMillis(20);
     baseUrl = "http://localhost:8091/jpetstore";
   }
 

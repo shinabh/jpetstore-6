@@ -270,7 +270,7 @@
              <configuration>
               <configuration>
                 <properties>
-                  <cargo.servlet.port>8099</cargo.servlet.port>
+                  <cargo.servlet.port>8095</cargo.servlet.port>
                 </properties>
               </configuration>
             </configuration>

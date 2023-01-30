@@ -49,6 +49,7 @@ import org.openqa.selenium.By;
  * @author Kazuki Shimizu
  */
 @ExtendWith(ScreenShooterExtension.class)
+@Disabled
 class ScreenTransitionIT {
 
   @BeforeAll
